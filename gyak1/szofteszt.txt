@@ -1,0 +1,48 @@
+1) kedvezmény kalkulátor
+-9000 ok
+-10000 rossz
+-24999 rossz végeredményt számolja rosszul
+-25000 rossz végeredményt számolja rosszul
+-50000 rossz discount érték rossz
+-negatív rendelési érték nincs lekezelve
+-vip nem jó százalékot ad a discounthoz
+-visszaadhat negatív számot is
+
+2) parkolási díj
+-10 ok
+-15 rossz, a 15 percnek ingyenesnek kellene lennie
+-17 rossz, az óra számítást felfele kellene kerekíteni nem lefel
+-hétvége ok, az óra számítás hibás, de egyébként maga a hétvégi ár kiszámítása jó
+-vip rossz, fixen 20Ft van levonva 20% helyett
+-negatív óraszám nincs lekezelve
+-parkolási díj max 5000 ok
+
+3) szállítás
+-iso kód csak nagybetűsen van vizsgálva
+-expressz vásárlásnál 50Ft-tal drágább és nem 50%-al
+-üres vagy hibás iso kódot is elfogad
+-korai return
+-5kg-nál nem jó a szállítási díj
+-20kg-nál sem jó a szállítási díj
+-negatív rendelési érték nincs kezelve
+-negatív tömeg érték nincs kezelve
+-20000Ft magyar vásárlás esetén is ingyenes
+
+4)Mozijegy
+-nincs lekezelve a negatív és 120 év feletti életkor
+-6 éves ingyenes pedig a specifikáció szerint már nem kéne annak lennie
+-65 évre nem számolja a 40% kedvezményt
+-nem csak a legnagyobb kedvezményt érvényesíti
+-3D-s film esetén 180%os ár a 800Ft helyett
+
+5)vizsgajegy kalkulátor
+-nincs lekezelve az érvénytelen pontszám
+-ha csak az egyik részen nincs meg a minimum pontszám, akkor is kaphat 1esnél jobb jegyet a hallgató
+-60 pontra is 2est kap a hallgató helytelenül
+-70 pontra is 3ast kap a hallgató helytelenül
+-85 pontra is 4est kap a hallgató helytelenül
+
+6)Csomag
+-Nincs lekezelve az érvénytelen csomag méret és tömeg
+-SMALL csomagnál a 2kg, valamint a 30cm is beletartozik specifikáció szerint
+-MEDIUM ha csak az egyik feltétel teljesül már megkapja ezt, pedig lehet, hogy a többi adat miatt másik kategóriába kellene kerülnie
