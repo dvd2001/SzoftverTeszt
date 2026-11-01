@@ -1,19 +1,3 @@
-function square(x) {
-  return x * x;
-}
-
-function fizzBuzz(szam) {
-  if (
-    (szam % 3 == 0 && szam % 5 == 0) ||
-    (szam.toString().includes("3") && szam.toString().includes("5")) ||
-    (szam.toString().includes("5") && szam % 3 == 0)
-  )
-    return "FizzBuzz";
-  else if (szam % 3 == 0 || szam.toString().includes("3")) return "Fizz";
-  else if (szam % 5 == 0 || szam.toString().includes("5")) return "Buzz";
-  else return szam;
-}
-
 function arabicToRomanConverter(n) {
   if (!n || n <= 0) return "";
 
